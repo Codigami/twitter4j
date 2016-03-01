@@ -42,6 +42,13 @@ public interface Status extends Comparable<Status>, TwitterResponse,
     long getId();
 
     /**
+     * Returns the id of the status
+     *
+     * @return the id (e.g. 210462857140252672)
+     */
+    String getIdStr();
+
+    /**
      * Returns the text of the status
      *
      * @return the text (e.g. Along with our new #Twitterbird, we've also updated our Display Guidelines: https://t.co/Ed4omjYs  ^JC)

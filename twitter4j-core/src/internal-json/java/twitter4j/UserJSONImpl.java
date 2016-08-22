@@ -33,6 +33,7 @@ import java.util.Date;
     private long id;
     private String idStr;
     private String name;
+    private String email;
     private String screenName;
     private String location;
     private String description;
@@ -101,6 +102,7 @@ import java.util.Date;
             id = ParseUtil.getLong("id", json);
             idStr = ParseUtil.getRawString("id_str", json);
             name = ParseUtil.getRawString("name", json);
+            email = ParseUtil.getRawString("email", json);
             screenName = ParseUtil.getRawString("screen_name", json);
             location = ParseUtil.getRawString("location", json);
 
@@ -215,6 +217,11 @@ import java.util.Date;
     @Override
     public String getName() {
         return name;
+    }
+    
+    @Override
+    public String getEmail() {
+        return email;
     }
 
     @Override
@@ -567,6 +574,7 @@ import java.util.Date;
         return "UserJSONImpl{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
                 ", screenName='" + screenName + '\'' +
                 ", location='" + location + '\'' +
                 ", description='" + description + '\'' +

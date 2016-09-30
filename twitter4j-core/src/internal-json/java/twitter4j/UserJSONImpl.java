@@ -72,6 +72,7 @@ import java.util.Date;
     private boolean isVerified;
     private boolean translator;
     private int listedCount;
+    private boolean following;
     private boolean isFollowRequestSent;
     private String[] withheldInCountries;
 
@@ -153,6 +154,7 @@ import java.util.Date;
             statusesCount = ParseUtil.getInt("statuses_count", json);
             listedCount = ParseUtil.getInt("listed_count", json);
             isFollowRequestSent = ParseUtil.getBoolean("follow_request_sent", json);
+            following = ParseUtil.getBoolean("following", json);
             if (!json.isNull("status")) {
                 JSONObject statusJSON = json.getJSONObject("status");
                 status = new StatusJSONImpl(statusJSON);
@@ -468,6 +470,11 @@ import java.util.Date;
     @Override
     public int getListedCount() {
         return listedCount;
+    }
+
+    @Override
+    public boolean isFollowing() {
+        return following;
     }
 
     @Override

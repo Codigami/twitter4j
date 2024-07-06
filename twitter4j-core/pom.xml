@@ -1,9 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.twitter4j</groupId>
     <artifactId>twitter4j-core</artifactId>
-    <version>4.0.5-CF</version>
+    <version>4.0.8-CF</version>
     <packaging>jar</packaging>
     <name>twitter4j-core</name>
     <description>A Java library for the Twitter API</description>
@@ -21,7 +22,7 @@
         <developerConnection>scm:https://github.com/yusuke/twitter4j.git
         </developerConnection>
 
-    <tag>4.0.5</tag>
+    <tag>4.0.8</tag>
   </scm>
     <developers>
         <developer>
@@ -166,8 +167,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <source>6</source>
-                    <target>6</target>
+                    <source>7</source>
+                    <target>7</target>
                 </configuration>
                 <version>2.5.1</version>
             </plugin>

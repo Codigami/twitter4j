@@ -49,12 +49,12 @@ class ConfigurationBase implements Configuration, java.io.Serializable {
     private String oAuth2TokenType;
     private String oAuth2AccessToken;
     private String oAuth2Scope;
-    private String oAuthRequestTokenURL = "https://api.twitter.com/oauth/request_token";
-    private String oAuthAuthorizationURL = "https://api.twitter.com/oauth/authorize";
-    private String oAuthAccessTokenURL = "https://api.twitter.com/oauth/access_token";
-    private String oAuthAuthenticationURL = "https://api.twitter.com/oauth/authenticate";
-    private String oAuth2TokenURL = "https://api.twitter.com/oauth2/token";
-    private String oAuth2InvalidateTokenURL = "https://api.twitter.com/oauth2/invalidate_token";
+    private String oAuthRequestTokenURL = "https://api.x.com/oauth/request_token";
+    private String oAuthAuthorizationURL = "https://api.x.com/oauth/authorize";
+    private String oAuthAccessTokenURL = "https://api.x.com/oauth/access_token";
+    private String oAuthAuthenticationURL = "https://api.x.com/oauth/authenticate";
+    private String oAuth2TokenURL = "https://api.x.com/oauth2/token";
+    private String oAuth2InvalidateTokenURL = "https://api.x.com/oauth2/invalidate_token";
 
     private String restBaseURL = "https://api.twitter.com/1.1/";
     private String streamBaseURL = "https://stream.twitter.com/1.1/";
